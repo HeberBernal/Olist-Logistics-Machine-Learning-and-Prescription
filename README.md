@@ -1,4 +1,4 @@
-📦 Olist Logistics: Predictive & Prescriptive Analysis
+## 📦Olist Logistics: Predictive & Prescriptive Analysis
 
 Este proyecto representa la **Fase 2** de un análisis integral de la cadena de suministro de **Olist** (Brasil). Tras consolidar una "Fuente Única de Verdad" en la Fase 1 (ETL), este módulo aplica Machine Learning para predecir tiempos de entrega y generar recomendaciones estratégicas basadas en hallazgos estadísticos.
 
