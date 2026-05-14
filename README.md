@@ -45,13 +45,6 @@ A partir del análisis de **Importancia de Variables**, donde el costo del flete
 1. **Ajuste Dinámico de SLA:** Implementar un margen de seguridad de **+5 días** (basado en el MAE) en la promesa de entrega para productos pesados, reduciendo la tasa de insatisfacción.
 2. **Auditoría de Rutas Críticas:** Investigar zonas con alto costo de flete que no se traducen en entregas rápidas para renegociar contratos con transportistas locales.
 3. **Estrategia de Centros de Distribución:** Incentivar el almacenamiento de productos de alto peso en regiones cercanas a los puntos de mayor demanda para minimizar el tiempo de transporte de larga distancia.
-
----
-
-## 📈 Visualizaciones
-*(Aquí puedes incluir la imagen de tu gráfica de importancia de variables)*
-`![Importancia de Variables](nombre_de_tu_grafica.png)`
-
 ---
 **Autor:** Heber Job Bernal Monarrez  
 *Data Analyst & Biomedical Researcher*
