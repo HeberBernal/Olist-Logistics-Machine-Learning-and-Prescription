@@ -16,23 +16,27 @@ Desarrollar un modelo de regresión capaz de estimar el tiempo de entrega (`deli
 
 ---
 
-## 📊 Metodología y Preparación de Datos
-El modelo se entrenó utilizando una muestra final de **110,189 registros**, aplicando las siguientes etapas:
-1. **Feature Engineering:** Selección estratégica de variables críticas: `product_weight_g`, `price`, `freight_value` y categorías de producto.
-2. **Tratamiento de Datos:** Imputación de valores nulos en dimensiones físicas mediante la mediana para garantizar la integridad del entrenamiento.
-3. **Data Splitting:** División de datos en 80% entrenamiento y 20% validación.
+## 📊 Metodología y Preparación
+El modelo procesó un dataset de **110,189 registros** con la siguiente estructura de datos:
+
+| Etapa | Descripción |
+| :--- | :--- |
+| **Feature Selection** | `weight`, `price`, `freight_value` y `category_encoded` |
+| **Imputación** | Mediana para dimensiones físicas (evita sesgos) |
+| **Data Split** | 80% Entrenamiento / 20% Validación |
+| **Algoritmo** | Random Forest Regressor (100 estimators) |
 
 ---
 
-## 🤖 Modelado: Random Forest Regressor
-Se seleccionó el algoritmo de **Random Forest** por su robustez ante valores atípicos y su capacidad para capturar relaciones no lineales entre el peso físico del producto y el costo del flete.
+## 🤖 Desempeño del Modelo
+Tras el entrenamiento, el bosque de decisión arrojó las siguientes métricas de control:
 
-### **Resultados Técnicos:**
-* **Error Medio Absoluto (MAE):** 5.11 días.
-* **Precisión del Modelo ($R^2$):** 0.19.
+| Métrica | Resultado | Interpretación |
+| :--- | :--- | :--- |
+| **MAE** | **5.11 días** | Error promedio en la predicción de entrega. |
+| **$R^2$** | **0.19** | Variabilidad explicada por atributos del producto. |
 
-> **Diagnóstico:** El $R^2$ de 0.19 indica que las características intrínsecas del producto explican una quinta parte de la variabilidad. El resto de la varianza está fuertemente ligada a factores geográficos (distancia origen-destino), lo que marca la hoja de ruta para futuras optimizaciones geoespaciales.
-
+> **Diagnóstico Pro:** El bajo $R^2$ es un hallazgo clave; demuestra que en la logística de Olist, la **geografía** (distancia) tiene un impacto mayor que las características físicas del objeto.
 ---
 
 ## 💡 Insights y Análisis Prescriptivo
