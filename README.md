@@ -47,4 +47,4 @@ A partir del análisis de **Importancia de Variables**, donde el costo del flete
 3. **Estrategia de Centros de Distribución:** Incentivar el almacenamiento de productos de alto peso en regiones cercanas a los puntos de mayor demanda para minimizar el tiempo de transporte de larga distancia.
 ---
 **Autor:** Heber Job Bernal Monarrez  
-*Data Analyst & Biomedical Researcher*
+*Data Analyst*
